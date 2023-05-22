@@ -1,0 +1,342 @@
+/*--------------------------------------------------------
+http://www.modularscale.com/ e dar uma breve explicação do que é tipografia
+https://drewish.com/tools/vertical-rhythm
+
+contrastes
+http://webaim.org/resources/contrastchecker
+________________________________________________________*/
+
+/*--------------------------------------------------------
+                        COLOR GUIDE
+
+GOLD: rgb(172,140,71)
+WHITE: rgb(226,226,226)
+GREY: rgb(128,128,128)
+BLACK: rgb(15,15,15)
+       rgb(15,15,15,0.74)
+________________________________________________________*/
+body{
+    font-size: 19px;
+    font-family: 'Verdana', Arial, sans-serif;
+
+    background: rgb(15, 15, 15);
+    background-image: url(../imagens/background.jpg);
+    background-repeat: none;
+    background-size: cover;
+    color: rgb(226,226,226);
+
+    padding: 2% 6% 6% 6%;
+}
+
+@media screen and(min-width:750px){
+    body{
+        font-size: 1.4em;
+    }
+}
+
+.container{
+    background: rgb(15,15,15);
+    background:  rgba(15,15,15,0.74);
+
+    padding: 30px;
+}
+
+h1,
+h2,
+h3{
+font-family: 'Verdana', Garamond, 'Baskerville Old Face',
+'Times New Roman', serif;
+font-weight: normal;
+}
+
+h1{
+    font-size: 3.3684em;
+    line-height: 1.2656em;
+    margin-top: 0.4219em;
+    margin-bottom: 0;
+    color: rgb(172,140,71);
+}
+
+h2{
+    font-size: 1.5em;
+    line-height: 1.2558em;
+    margin: 0.4219em auto 0.4219em auto;
+}
+
+h3{
+    font-size: 1.5263em;
+    font-weight: normal;
+    line-height: 1.8621em;
+    margin-top: 0.9310em;
+    margin-bottom: 0;
+    color: rgb(172,140,71);
+}
+
+p{
+    font-size: 1em;
+    line-height: 1.4211em;
+    margin-top: 1.4211em;
+    margin-bottom: 0;
+    font-weight: 100;
+    max-width: 700px;
+}
+
+li{
+    font-weight: 100;
+    }
+
+img{
+    width: 100%;
+}
+
+a:link{
+    color: rgb(172,140,71);
+}
+
+a:visited{
+    color: rgb(100,81,41);
+}
+
+a:hover{
+    color: rgb(224,182,90);
+}
+
+a:active{
+    color: rgb(252,217,142);
+}
+
+.button{
+background-color: rgb(172,140,71);
+border-radius: 8px;
+max-width: 250px;
+}
+
+.button a{
+    color: rgb(226,226,226);
+    text-decoration: none;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+}
+
+.button a:hover{
+    background-color: rgb(119,97,48);
+    border-radius: 8px;
+    transition: 0.9s background-color;
+}
+
+.info h3{
+    border-bottom: 1px solid rgb(128,128,128);
+}
+
+.info p{
+    font-style: italic;
+}
+
+.info ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+/*-----------------------------------------------------------------------------
+LOGO STYLES
+-----------------------------------------------------------------------------*/
+
+.logo{
+    display: block; /* é um bloco não fica nada à esquerda nem à direita */
+    margin: 0 auto;
+    width: 150px;
+}
+
+.logo img{
+    width: 150px;
+}
+
+/*-----------------------------------------------------------------------MAIN NAVIGATION STYLES
+-----------------------------------------------------------------------------*/
+.main-navigation ul{
+    padding-left: o;
+    }
+
+.main-navigation .nav-item.active {
+        border-bottom: rgb(172,140,71,0.61) 3px solid;
+      }
+
+.main-navigation li{
+    list-style: none;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.main-navigation a{
+    display: block;
+    padding: 15px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgba(67,67,67,0.17);
+    color: rgb(180,180,180);
+}
+
+.main-navigation a:visited{
+    color: rgb(106,106,106);
+}
+
+.main-navigation a:hover{
+    color: rgb(255,255,255);
+    transition: 0.5s color;
+    background: rgb(172,140,71,0.61);
+}
+
+/*-----------------------------------------------------------------------------
+                                MENU PAGE STYLES
+-----------------------------------------------------------------------------*/
+.gallery{
+    margin-top: 30px;
+    }
+
+    .menu-page .info ul{
+        font-style: italic;
+            }
+
+.menu-page .info{
+    float: none;
+    text-align: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*================================================================================FOOTER GLOBAL STYLES
+===============================================================================*/
+footer{
+    padding: 10px 0;
+    clear: both;
+    }
+
+footer h4{
+    text-transform: uppercase;
+    }
+
+footer p{
+    margin: 0;
+}
+
+
+/***media query para ir ajustando as imagens da galeria***/
+
+@media scree and (min-width: 600px) {
+
+    .gallery{
+        width: 446px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gallery img{
+        max-width: 220px;
+    }
+}
+
+@media scree and (min-width: 1050px) {
+
+    .gallery{
+        width: 567px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gallery img{
+        max-width: 280px;
+    }
+}
+
+/***fim da media query para a gallery***/
+
+
+/***media query para colocar lado a lado a .info***/
+@media screen and (min-width:1050px){
+    .info{
+        float: left;
+        width: 30%;
+        margin-left: 3%;
+    }
+}
+
+/***fim da media query para colocar lado a lado a .info***/
+
+/***media query para centrar o texto de entrada de todas as páginas***/
+
+@media screen and (min-width:750px){
+    .landing{
+        text-align: center;
+    }
+
+    .landing p{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/***fim da media query para centrar o texto de entrada de todas as páginas***/
+
+/***media query para o menu principal***/
+
+@media screen and (min-width:750px){
+    .main-navigation{
+        min-height: 100px;
+        border-top: 1px solid rgb(36,36,36);
+        border-bottom: 1px solid rgb(36,36,36);
+    }
+
+    .main-navigation ul{
+        max-width: 950px;
+        margin: o auto;
+    }
+
+    .main-navigation li{
+        float: left;
+        margin-left: 20px;
+        width: 28%;
+    }
+
+    .main-navigation a{
+        background: none;
+    }
+
+    .main-navigation a:hover{
+        background: none;
+    }
+}
+
+/***fim da media query para o menu principal***/
+
+/***Colocar a palavra do menu principal sempre centrada em relação ao logotipo***/
+@media screen and (min-width: 880px){
+
+    .main-navigation ul{
+        position: relative;
+        right: -30px;
+    }
+}
+
+/***Localização e horas***/
+@media screen and (min-width:1050px){
+
+    .location-page .info{
+        float: none;
+        width: 100%;
+    }
+
+    .location-page .landing{
+        float: left;
+        text-align: left;
+        width: 56%;
+    }
+
+    .location-page .sidebar{
+        float:right;
+        width: 36%;
+    }
+}
+/***fim da media query para Localização e horas***/
