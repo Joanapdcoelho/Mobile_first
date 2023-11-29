@@ -6,6 +6,5 @@
  * Menu
  * Contactos
    
-![Imagem Pub Marialva](PubMarialva.png)
 
 
